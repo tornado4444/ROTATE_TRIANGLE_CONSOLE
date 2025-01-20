@@ -38,15 +38,15 @@ float calculateY(int i, int j, int k) {
 ```
 Next, following the same logic, we describe calculate Y and describe its parameters, however, since this is Y, the logic changes a little, before
 
-_j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) + j * cos(A) * sin(C)_
+_1) j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) + j * cos(A) * sin(C)_
 
 however, now we simply change the signs to the opposite
 
-_j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) + j * cos(A) * sin(C)_
+_2) j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) + j * cos(A) * sin(C)_
 
 Also, we're change the signs to the oposite:
 
-_k * cos(A) * sin(B) * sin(C) - i * cos(B) * sin(C)_
+_3) k * cos(A) * sin(B) * sin(C) - i * cos(B) * sin(C)_
 
 + ## __CALCULATE Z__
 ```c
@@ -63,6 +63,7 @@ Calculate the Z coordinate after all rotations(with the help formula).
 # ABOUT MY INITIALIZATION.
 So, here we come to my implementation, let me explain to you in detail what is happening in my code, namely the formulas.
 
++ ## __CALCULATE X__
 ```c++
 float Solution::calculateX(float i, float j, float k) {
 	float centerX = TRIANGLE_WIDTH / 2; // center divide by 2 so that the triangle rotates in the center, and not like a circle
@@ -75,6 +76,8 @@ float Solution::calculateX(float i, float j, float k) {
            j * cos(A) * sin(C) + k * sin(A) * sin(C) + i * cos(B) * cos(C);
 }
 ```
+Here is the same logic for formula 3D rotation...but we have but there are some differences:
+_1) i -= centerX;_ 
 
 # FULL RESULT.
 

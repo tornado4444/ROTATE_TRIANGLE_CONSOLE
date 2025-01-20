@@ -101,6 +101,8 @@ float Solution::calculateY(float i, float j, float k) {
         i * cos(B) * sin(C);
 }
 ```
+
+The same logic for formula 3D rotation...but we have but there are some differences:
 # FULL RESULT.
 
 ![image](https://github.com/tornado4444/ROTATE_TRIANGLE_CONSOLE/blob/main/CONSOLE_TRIANGLE/x64/Debug/CONSOLE_TRIANGLE.tlog/pedro.gif)

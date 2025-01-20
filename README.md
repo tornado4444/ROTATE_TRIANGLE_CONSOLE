@@ -12,3 +12,5 @@ A basic 3D rotation (also called an elementary rotation) is a rotation around on
 ![image](https://github.com/tornado4444/ROTATE_TRIANGLE_CONSOLE/blob/main/CONSOLE_TRIANGLE/x64/Debug/CONSOLE_TRIANGLE.tlog/formula_2.png)
 
 You can find out more about other 3D rotation formulas in Wikipedia, here is the link:
+https://en.wikipedia.org/wiki/Rotation_matrix
+

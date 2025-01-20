@@ -9,4 +9,4 @@ Let me explain specifically how I understood this topic. Well, let's start with 
 ![image](https://github.com/tornado4444/ROTATE_TRIANGLE_CONSOLE/blob/main/CONSOLE_TRIANGLE/x64/Debug/CONSOLE_TRIANGLE.tlog/formula_1%202025-01-20%20191646.png)
 
 A basic 3D rotation (also called an elementary rotation) is a rotation around one of the axes of the coordinate system. So this means that you have three coordinates (x, y, z)... in principle, it sounds logical, since we are talking about 3D.
-![image]
+![image](https://github.com/tornado4444/ROTATE_TRIANGLE_CONSOLE/blob/main/CONSOLE_TRIANGLE/x64/Debug/CONSOLE_TRIANGLE.tlog/formula_2.png)

@@ -27,3 +27,16 @@ So, let's analyze what he did, he specified three integers in the function, name
 return j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) + j * cos(A) * sin(C) + k * sin(A) * sin(C) + i * cos(B) * cos(C);
 ```
 it turns out that the specified edge will rotate only along the X axis that we specified(A, B, C SPECIFIED PARTIES).
+
++ ## __CALCULATE Y__
+```c
+float calculateY(int i, int j, int k) {
+    return j * cos(A) * cos(C) + k * sin(A) * cos(C) -
+        j * sin(A) * sin(B) * sin(C) + k * cos(A) * sin(B) * sin(C) -
+        i * cos(B) * sin(C);
+}
+```
+Next, following the same logic, we describe calculate Y and describe its parameters, however, since this is Y, the logic changes a little, before
+_j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) + j * cos(A) * sin(C)_
+however, now we simply change the signs to the opposite
+_j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) + j * cos(A) * sin(C)_

@@ -21,3 +21,8 @@ float calculateX(int i, int j, int k) {
    return j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) + j * cos(A) * sin(C) + k * sin(A) * sin(C) + i * cos(B) * cos(C);
 }
 ```
+So, let's analyze what he did, he specified three integers in the function, namely i, j, k (needed for calculation) and takes the formula, and substitutes these three values ​... specifically:
+```c
+return j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) + j * cos(A) * sin(C) + k * sin(A) * sin(C) + i * cos(B) * cos(C);
+```
+it turns out that the specified edge will rotate only along the X axis that we specified(A, B, C SPECIFIED PARTIES).

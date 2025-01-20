@@ -63,3 +63,4 @@ Calculate the Z coordinate after all rotations(with the help formula).
 # ABOUT MY INITIALIZATION.
 
 # FULL RESULT.
+![image](https://github.com/tornado4444/ROTATE_TRIANGLE_CONSOLE/blob/main/CONSOLE_TRIANGLE/x64/Debug/CONSOLE_TRIANGLE.tlog/pedro.gif)

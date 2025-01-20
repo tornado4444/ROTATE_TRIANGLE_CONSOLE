@@ -138,6 +138,39 @@ Here we specifically center the coordinates relative to the middle of the triang
 _3) k -= centerZ;_
 
 + ## __CALCULATE_FOR_SURFACE__
+
+```c++
+void Solution::calculateForSurface(float triangleX, float triangleY, float triangleZ, char ch) {
+    // Get the coordinates of the point after all rotations
+    x = calculateX(triangleX, triangleY, triangleZ);
+    y = calculateY(triangleX, triangleY, triangleZ);
+    z = calculateZ(triangleX, triangleY, triangleZ) + distanceFromCam;
+
+    // Calculate the inverse of Z to create a perspective effect
+    // The further away the point (higher Z), the smaller the ooz
+    ooz = 1 / z;
+
+    // Project 3D coordinates onto 2D screen
+    xp = (int)(WIDTH / 2 + K1 * ooz * x * 2); // to compensate for the proportions of the character in the console
+    yp = (int)(HEIGHT /  2 + K1 * ooz * y); // Center on the screen
+
+    // Calculate index in one-dimensional buffer from 2D coordinates
+    idx_buffer = xp + yp * WIDTH;
+
+    // Check if the point is within the screen
+    if (idx_buffer >= 0 && idx_buffer < WIDTH * HEIGHT) {
+        // If the current point is closer to the camera than the one already drawn
+        if (ooz > zBuffer[idx_buffer]) {
+            // Update the depth buffer and the character at that point
+            zBuffer[idx_buffer] = ooz;
+            buffer[idx_buffer] = ch;
+        }
+    }
+}
+```
+
+1) _x = calculateX(triangleX, triangleY, triangleZ); y = calculateY(triangleX, triangleY, triangleZ); z = calculateZ(triangleX, triangleY, triangleZ) + distanceFromCam; - it's just a reference to the functions themselves that were in my class_
+2) ooz = 1 / z; - 
 # FULL RESULT.
 
 ![image](https://github.com/tornado4444/ROTATE_TRIANGLE_CONSOLE/blob/main/CONSOLE_TRIANGLE/x64/Debug/CONSOLE_TRIANGLE.tlog/pedro.gif)

@@ -90,6 +90,17 @@ _3) k -= centerX;_
 Here we specifically center the coordinates relative to the middle of the triangle (the first side __k__ and we rotate it counterclockwise, since we have a minus).
 
 + ## __CALCULATE Y__
+```c++
+float Solution::calculateY(float i, float j, float k) {
+    float centerY = TRIANGLE_WIDTH / 2;
+    i -= centerY;
+    j -= centerY;
+    k -= centerY;
+    return j * cos(A) * cos(C) + k * sin(A) * cos(C) -
+        j * sin(A) * sin(B) * sin(C) + k * cos(A) * sin(B) * sin(C) -
+        i * cos(B) * sin(C);
+}
+```
 # FULL RESULT.
 
 ![image](https://github.com/tornado4444/ROTATE_TRIANGLE_CONSOLE/blob/main/CONSOLE_TRIANGLE/x64/Debug/CONSOLE_TRIANGLE.tlog/pedro.gif)

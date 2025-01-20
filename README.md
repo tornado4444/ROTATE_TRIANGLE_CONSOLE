@@ -54,4 +54,8 @@ float calculateZ(int i, int j, int k) {
     return j * sin(A) * cos(B) - k * cos(A) * cos(B) - i * sin(B);
 }
 ```
-Calculate the Z coordinate after all rotations(with the help formula)
+Calculate the Z coordinate after all rotations(with the help formula).
+
+# THE RESULT(Servet Gulnaroglu)
+
+

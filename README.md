@@ -61,6 +61,21 @@ Calculate the Z coordinate after all rotations(with the help formula).
 ![image](https://github.com/tornado4444/ROTATE_TRIANGLE_CONSOLE/blob/main/CONSOLE_TRIANGLE/x64/Debug/CONSOLE_TRIANGLE.tlog/commone.gif)
 
 # ABOUT MY INITIALIZATION.
+So, here we come to my implementation, let me explain to you in detail what is happening in my code, namely the formulas.
+
+```c++
+float Solution::calculateX(float i, float j, float k) {
+	float centerX = TRIANGLE_WIDTH / 2; // center divide by 2 so that the triangle rotates in the center, and not like a circle
+	i -= centerX;   //  increment i, that to realization, to rotate counterclockwise                                                                                                                    
+	j -= centerX;   //  increment j, that to realization, to rotate counterclockwise
+	k -= centerX;   //  increment k, that to realization, to rotate counterclockwise
+
+    // The formula for 3D rotation(more details on github)
+    return j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) +
+           j * cos(A) * sin(C) + k * sin(A) * sin(C) + i * cos(B) * cos(C);
+}
+```
 
 # FULL RESULT.
+
 ![image](https://github.com/tornado4444/ROTATE_TRIANGLE_CONSOLE/blob/main/CONSOLE_TRIANGLE/x64/Debug/CONSOLE_TRIANGLE.tlog/pedro.gif)

@@ -45,3 +45,11 @@ _j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) + j * cos(A) * sin(
 Also, we're change the signs to the oposite:
 
 _k * cos(A) * sin(B) * sin(C) - i * cos(B) * sin(C)_
+
++ ## __CALCULATE Z__
+```c
+float calculateZ(int i, int j, int k) {
+    return j * sin(A) * cos(B) - k * cos(A) * cos(B) - i * sin(B);
+}
+```
+Calculate the Z coordinate after all rotations(with the help formula)

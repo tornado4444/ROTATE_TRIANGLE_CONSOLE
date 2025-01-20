@@ -136,6 +136,8 @@ _2) j -= centerZ;_
 Here we specifically center the coordinates relative to the middle of the triangle (the first side __j__ and we rotate it counterclockwise, since we have a minus).
 
 _3) k -= centerZ;_
+
++ ## __calculateForSurface__
 # FULL RESULT.
 
 ![image](https://github.com/tornado4444/ROTATE_TRIANGLE_CONSOLE/blob/main/CONSOLE_TRIANGLE/x64/Debug/CONSOLE_TRIANGLE.tlog/pedro.gif)

@@ -71,7 +71,6 @@ float Solution::calculateX(float i, float j, float k) {
 	j -= centerX;   //  increment j, that to realization, to rotate counterclockwise
 	k -= centerX;   //  increment k, that to realization, to rotate counterclockwise
 
-    // The formula for 3D rotation(more details on github)
     return j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) +
            j * cos(A) * sin(C) + k * sin(A) * sin(C) + i * cos(B) * cos(C);
 }
@@ -79,6 +78,7 @@ float Solution::calculateX(float i, float j, float k) {
 Here is the same logic for formula 3D rotation...but we have but there are some differences:
 _1) i -= centerX;_ 
 
+Here we specifically center the coordinates relative to the middle of the triangle (the first side i and we rotate it counterclockwise, since we have a minus)
 # FULL RESULT.
 
 ![image](https://github.com/tornado4444/ROTATE_TRIANGLE_CONSOLE/blob/main/CONSOLE_TRIANGLE/x64/Debug/CONSOLE_TRIANGLE.tlog/pedro.gif)

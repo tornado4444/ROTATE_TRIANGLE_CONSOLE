@@ -113,6 +113,29 @@ _2) j -= centerY;_
 Here we specifically center the coordinates relative to the middle of the triangle (the first side __j__ and we rotate it counterclockwise, since we have a minus).
 
 _3) k -= centerY;_
+
++ ## __CALCULATE Z__
+```c++
+float Solution::calculateZ(float i, float j, float k) {
+    float centerZ = TRIANGLE_WIDTH / 2;
+    i -= centerZ;
+    j -= centerZ;
+    k -= centerZ;
+    return k * cos(A) * cos(B) - j * sin(A) * cos(B) + i * sin(B);
+}
+```
+
+The same logic for formula 3D rotation...but we have but there are some differences:
+
+_1) i -= centerZ;_ 
+
+Here we specifically center the coordinates relative to the middle of the triangle (the first side __i__ and we rotate it counterclockwise, since we have a minus).
+
+_2) j -= centerZ;_ 
+
+Here we specifically center the coordinates relative to the middle of the triangle (the first side __j__ and we rotate it counterclockwise, since we have a minus).
+
+_3) k -= centerZ;_
 # FULL RESULT.
 
 ![image](https://github.com/tornado4444/ROTATE_TRIANGLE_CONSOLE/blob/main/CONSOLE_TRIANGLE/x64/Debug/CONSOLE_TRIANGLE.tlog/pedro.gif)

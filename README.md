@@ -40,3 +40,5 @@ Next, following the same logic, we describe calculate Y and describe its paramet
 _j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) + j * cos(A) * sin(C)_
 however, now we simply change the signs to the opposite
 _j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) + j * cos(A) * sin(C)_
+Also, we're change the signs to the oposite:
+_k * cos(A) * sin(B) * sin(C) - i * cos(B) * sin(C)_

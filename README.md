@@ -7,3 +7,6 @@ Perhaps you have already seen a console implementation of a cube implemented in 
 Let me explain specifically how I understood this topic. Well, let's start with the fact that the 3D rotation that I use is typical linear algebra, if you don't know it well, it's not a problem (there are many formulas on the Internet), one thing you need to understand is that a rotation matrix is a transformation matrix that is used to perform a rotation in Euclidean space. For example, using the convention below, the matrix.
 
 ![image](https://github.com/tornado4444/ROTATE_TRIANGLE_CONSOLE/blob/main/CONSOLE_TRIANGLE/x64/Debug/CONSOLE_TRIANGLE.tlog/formula_1%202025-01-20%20191646.png)
+
+A basic 3D rotation (also called an elementary rotation) is a rotation around one of the axes of the coordinate system. So this means that you have three coordinates (x, y, z)... in principle, it sounds logical, since we are talking about 3D.
+![image]

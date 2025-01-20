@@ -16,7 +16,7 @@ https://en.wikipedia.org/wiki/Rotation_matrix
 
 As you already understood, with the help of this formula Servet Gulnaroglu implemented his 3D cube, and it really rotated, here I also decided to tell in detail about the implementation of that guy in the C programming language.
 
-## __CALCULATE X__
++ ## __CALCULATE X__
 ```c
 float calculateX(int i, int j, int k) {
    return j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) + j * cos(A) * sin(C) + k * sin(A) * sin(C) + i * cos(B) * cos(C);

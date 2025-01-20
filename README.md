@@ -14,3 +14,4 @@ A basic 3D rotation (also called an elementary rotation) is a rotation around on
 You can find out more about other 3D rotation formulas in Wikipedia, here is the link:
 https://en.wikipedia.org/wiki/Rotation_matrix
 
+As you already understood, with the help of this formula Servet Gulnaroglu implemented his 3D cube, and it really rotated, here I also decided to tell in detail about the implementation of that guy in the C programming language.

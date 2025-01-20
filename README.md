@@ -170,8 +170,9 @@ void Solution::calculateForSurface(float triangleX, float triangleY, float trian
 ```
 
 1) _x = calculateX(triangleX, triangleY, triangleZ); y = calculateY(triangleX, triangleY, triangleZ); z = calculateZ(triangleX, triangleY, triangleZ) + distanceFromCam; - it's just a reference to the functions themselves that were in my class_
-2) ooz = 1 / z; - inverse in z that to create a perspective effect
-3) idx_buffer = xp + yp * WIDTH; - just calculate index in one-dimensional buffer from 2D coordinates
+2) ooz = 1 / z; - inverse in z that to create a perspective effect.
+3)  xp = (int)(WIDTH / 2 + K1 * ooz * x * 2); - to compensate for the proportions of the character in the console
+4) idx_buffer = xp + yp * WIDTH; - just calculate index in one-dimensional buffer from 2D coordinates
 # FULL RESULT.
 
 ![image](https://github.com/tornado4444/ROTATE_TRIANGLE_CONSOLE/blob/main/CONSOLE_TRIANGLE/x64/Debug/CONSOLE_TRIANGLE.tlog/pedro.gif)
